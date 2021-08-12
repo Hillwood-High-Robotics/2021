@@ -37,7 +37,9 @@ public class ManualControl extends LinearOpMode {
           left.setPower(gamepad1.left_stick_y);
           right.setPower(gamepad1.right_stick_y);
         
-          if(gamepad.a
+          if(gamepad.a){
+          
+          }
       }
     }
   }
