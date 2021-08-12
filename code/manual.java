@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 
-@TeleOp(name = "ManualControl (Blocks to Java)", group = "")
+@TeleOp(name = "ManualControl", group = "")
 public class ManualControl extends LinearOpMode {
 
   private Servo turn_bucket;
@@ -38,7 +38,7 @@ public class ManualControl extends LinearOpMode {
           right.setPower(gamepad1.right_stick_y);
         
           if(gamepad.a){
-          
+            //Do Stuff
           }
       }
     }
