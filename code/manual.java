@@ -33,31 +33,11 @@ public class ManualControl extends LinearOpMode {
     if (opModeIsActive()) {
       // Put run blocks here.
       while (opModeIsActive()) {
-        if (gamepad1.a) {
-          left.setPower(-gamepad1.left_stick_y);
-          right.setPower(-gamepad1.right_stick_y);
-        } else {
+          // Basic controls of the motors for Drive
           left.setPower(gamepad1.left_stick_y);
           right.setPower(gamepad1.right_stick_y);
-        }
-        if (gamepad1.left_bumper) {
-          arm_up.setPower(100);
-        } else {
-          arm_up.setPower(-gamepad1.left_trigger);
-        }
-        if (gamepad1.right_bumper) {
-          arm_forward.setPower(100);
-        } else {
-          arm_forward.setPower(-gamepad1.right_trigger);
-        }
-        if (gamepad1.dpad_left) {
-          turn_bucket.setPosition(0);
-        }
-        if (gamepad1.dpad_right) {
-          turn_bucket.setPosition(180);
-        }
-        // Put loop blocks here.
-        // Use left stick to drive and right stick to turn
+        
+          if(gamepad.a
       }
     }
   }
